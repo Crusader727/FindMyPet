@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "baseUrl": "src",
+        "paths": {
+            // "qrcode-react": [ "typings/qrcode-react.d.ts" ],
+            // "react-to-print": [ "typings/react-to-print.d.ts" ],
+            "components/*": [ "components/*" ],
+            "app/*": [ "app/*" ],
+            "pages/*": [ "pages/*" ],
+            "common/*": [ "common/*" ],
+            "types/*": [ "types/*" ]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
