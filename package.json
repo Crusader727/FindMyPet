@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config ./webpack.dev.js",
-    "build": "webpack --config ./webpack.prod.js"
+    "build": "webpack --config ./webpack.prod.js",
+    "lint-fix": "tslint -c tslint.json 'src/**/*.ts*' --fix",
+    "lint": "tslint -c tslint.json 'src/**/*.ts*'"
   },
   "sideEffects": false,
   "keywords": [],
@@ -16,6 +18,7 @@
     "@types/react-router-dom": "^4.3.5",
     "@types/webpack": "^4.4.11",
     "autoprefixer": "^9.1.0",
+    "tslint-react": "^4.0.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",
@@ -39,7 +42,6 @@
   },
   "dependencies": {
     "npm": "^6.4.1",
-    "office-ui-fabric-react": "^6.47.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router-dom": "^5.0.1"

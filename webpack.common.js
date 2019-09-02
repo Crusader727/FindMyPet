@@ -4,6 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
+function srcPath(subdir) {
+    return path.join(__dirname, "src", subdir);
+}
+
 module.exports = {
   entry: {
     gx: './src/index.tsx'
@@ -44,21 +48,18 @@ module.exports = {
           }
         ]
       },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              //name: '[path][name].[ext]',
-              outputPath: 'fonts/'
-            }
-          }        ]
-      }
     ]
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      components: srcPath('components'),
+      app: srcPath('app'),
+      pages: srcPath('pages'),
+      core: srcPath('core'),
+      common: srcPath('common'),
+      types: srcPath('types')
+  }
   },
   output: {
     filename: '[name].bundle.js',
