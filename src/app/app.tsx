@@ -1,4 +1,5 @@
 import './app.scss';
+import {awd} from './app.scss';
 
 import * as React from "react";
 import { BrowserRouter, Switch, Route, RouteComponentProps, Redirect } from 'react-router-dom'
@@ -11,7 +12,7 @@ export class App extends React.Component {
                 <Switch>
                     <Route
                         path='/'
-                        render={() => <div/>}
+                        render={() => <div className={awd}>awdawddaw</div>}
                     />
                 </Switch>
             </BrowserRouter>

@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/app/app.scss"],"names":[],"mappings":"AAAA,KAAK,SAAS,UAAU,kBAAkB,gBAAgB,8BAA8B,qBAAqB,UAAU,MAAM,aAAa,UAAU","file":"bundle.css","sourcesContent":["body{margin:0;padding:0;font-family:arial;overflow:hidden}a,textarea,p,input,button,div{text-decoration:none;outline:0}.root{height:100vh}html,body{height:100%}\n"],"sourceRoot":""}
