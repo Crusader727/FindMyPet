@@ -1,6 +1,6 @@
 import {awd} from "./app.scss";
 
-import {Publication} from "components/publication";
+import PublicationPreview from "../components/PublicationPreview/PublicationPreview";
 import * as React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -11,7 +11,7 @@ export class App extends React.Component {
                 <Switch>
                     <Route
                         path="/"
-                        component={Publication}
+                        component={PublicationPreview}
                     />
                 </Switch>
             </BrowserRouter>
