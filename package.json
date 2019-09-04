@@ -14,11 +14,11 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@types/storybook__react": "^4.0.2",
     "@storybook/react": "^5.1.11",
-    "@types/react": "^16.4.7",
-    "@types/react-dom": "^16.0.6",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^4.3.5",
+    "@types/storybook__react": "^4.0.2",
     "@types/webpack": "^4.4.11",
     "autoprefixer": "^9.1.0",
     "awesome-typescript-loader": "^5.2.1",
@@ -49,8 +49,8 @@
   },
   "dependencies": {
     "npm": "^6.4.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1"
   }
 }

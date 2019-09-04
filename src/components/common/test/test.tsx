@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-export const Test = ({ str }: { str: string }) => {
+export function Test({ str }: { str: string }) {
     return (
         <div>
             {str}
         </div>
     );
-};
+}
