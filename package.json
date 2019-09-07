@@ -8,7 +8,7 @@
     "build": "webpack --config ./webpack.prod.js",
     "lint-fix": "tslint -c tslint.json 'src/**/*.ts*' --fix",
     "lint": "tslint -c tslint.json 'src/**/*.ts*'",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "NODE_PATH=src start-storybook -p 9001 -c .storybook"
   },
   "sideEffects": false,
   "keywords": [],
