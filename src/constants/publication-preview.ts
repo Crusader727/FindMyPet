@@ -1,0 +1,1 @@
+export const HIS_NAME_MIGHT_BE = "Его могли бы звать...";
