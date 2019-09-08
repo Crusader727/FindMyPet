@@ -1,8 +1,9 @@
-import {awd} from "./app.scss";
-
-import {Publication} from "components/publication";
 import * as React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import { Feed } from "pages/feed";
+
+import { awd } from "./app.scss";
 
 export class App extends React.Component {
     public render() {
@@ -11,7 +12,7 @@ export class App extends React.Component {
                 <Switch>
                     <Route
                         path="/"
-                        component={Publication}
+                        component={Feed}
                     />
                 </Switch>
             </BrowserRouter>

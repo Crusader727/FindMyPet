@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 function srcPath(subdir) {
-    return path.join(__dirname, "src", subdir);
+  return path.join(__dirname, "src", subdir);
 }
 
 module.exports = {
@@ -36,7 +36,7 @@ module.exports = {
           }
         ],
         exclude: /node_modules/
-      },      
+      },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
@@ -58,8 +58,10 @@ module.exports = {
       pages: srcPath('pages'),
       core: srcPath('core'),
       common: srcPath('common'),
+      actions: srcPath('actions'),
+      reducers: srcPath('reducers'),
       types: srcPath('types')
-  }
+    }
   },
   output: {
     filename: '[name].bundle.js',
