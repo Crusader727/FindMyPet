@@ -11,17 +11,23 @@
     &__header {
         color: black;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
 
-        &___PrefixName {
-            font-size: 13px;
-            line-height: 20px;
-        }
+        &__name {
+            display: flex;
+            flex-direction: column;
 
-        &__PetName {
-            font-size: 17px;
-            line-height: 24px;
-            font-weight: 500;
+            &___PrefixName {
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+            &__PetName {
+                font-size: 17px;
+                line-height: 24px;
+                font-weight: 500;
+            }
         }
     }
 
@@ -37,6 +43,8 @@
 
     &__tags {
         margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
 
         &__tag {
             border: 1px solid #2F80ED;
@@ -55,6 +63,29 @@
 
         &__element {
             color: red;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__address {
+            color: red;
+
+            &__subway {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                
+                &__color {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+            }
         }
     }
 }
