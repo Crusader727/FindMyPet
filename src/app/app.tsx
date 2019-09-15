@@ -2,7 +2,7 @@ import * as React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // Components
-import { PublicationPreview } from "components/publication-preview";
+import { PublicationPreview } from "components/ui/publication-preview";
 
 import { awd } from "./app.scss";
 
