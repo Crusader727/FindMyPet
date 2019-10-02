@@ -8,7 +8,9 @@
     "build": "webpack --config ./webpack.prod.js",
     "lint-fix": "tslint -c tslint.json 'src/**/*.ts*' --fix",
     "lint": "tslint -c tslint.json 'src/**/*.ts*'",
-    "storybook": "NODE_PATH=src start-storybook -p 9001 -c .storybook"
+    "storybook": "NODE_PATH=src start-storybook -p 9001 -c .storybook",
+    "jest:integration": "jest -c integration/jest.config.js",
+    "test:integration": "start-server-and-test storybook http-get://localhost:9001 jest:integration"
   },
   "sideEffects": false,
   "keywords": [],
@@ -28,6 +30,7 @@
     "file-loader": "^1.1.11",
     "fork-ts-checker-webpack-plugin": "^0.4.9",
     "html-webpack-plugin": "^3.2.0",
+    "jest-image-snapshot": "^2.11.0",
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.2",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
@@ -48,10 +51,14 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
+    "jest": "^24.9.0",
+    "jest-puppeteer": "^4.3.0",
     "npm": "^6.4.1",
+    "puppeteer": "^1.20.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-multi-carousel": "^2.2.5",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "start-server-and-test": "^1.10.2"
   }
 }

@@ -5,7 +5,7 @@ import { PublicationPreview } from "./publication-preview";
 const name = "Шарик";
 const tags = ["Есть Прививки", "Не леняет"];
 const descriptionElement = "Приучен к лотку";
-const pictures = ['http://newrussianmarkets.com/wp-content/uploads/2018/10/f2d0f2696e6151d756c59f26a4bf6307.jpg'];
+const pictures = ['https://im0-tub-ru.yandex.net/i?id=323c9c7273add15d5900d05f83b854fc-l&n=13'];
 const address = {
     country: 'Россия',
     city: 'Москва',
