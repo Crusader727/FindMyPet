@@ -14,6 +14,7 @@
         "pages/*": [ "pages/*" ],
         "core/*": [ "core/*" ],
         "common/*": [ "common/*" ],
+        "constants/*": [ "constants/*" ],
         "types/*": [ "types/*" ]
       },
       "allowJs": true,

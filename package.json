@@ -8,7 +8,7 @@
     "build": "webpack --config ./webpack.prod.js",
     "lint-fix": "tslint -c tslint.json 'src/**/*.ts*' --fix",
     "lint": "tslint -c tslint.json 'src/**/*.ts*'",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "NODE_PATH=src start-storybook -p 9001 -c .storybook"
   },
   "sideEffects": false,
   "keywords": [],
@@ -51,6 +51,7 @@
     "npm": "^6.4.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-multi-carousel": "^2.2.5",
     "react-router-dom": "^5.0.1"
   }
 }

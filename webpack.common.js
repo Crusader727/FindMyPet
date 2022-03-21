@@ -58,7 +58,9 @@ module.exports = {
       pages: srcPath('pages'),
       core: srcPath('core'),
       common: srcPath('common'),
+      constants: srcPath('constants'),
       types: srcPath('types')
+
   }
   },
   output: {
